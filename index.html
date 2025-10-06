@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image"
+      href="./assest/icon/book-reader-solid-24.png"
+    />
+    <title>Self_Study_in</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" class="css" />
+  </head>
+
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbarSupportedContent"
+    data-bs-smooth-scroll="true"
+    class="scrollspy-example-2"
+    tabindex="0"
+  >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+          <img src="./assest/profile.png" alt="profile" class="nav-profile me-2" id="navProfile" />
+        <a
+          class="navbar-brand"
+          style="
+            font-weight: 500;
+            font-family: cursive;
+            font-size: xx-large;
+            color: rgb(46, 46, 159);
+          "
+          href="#"
+          ><span>Self_Study_in</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#jumbotron">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#course">Course</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Jumbotrone -->
+    <div
+      class="mt-4 p-5 bg-primary text-white rounded text-center"
+      id="jumbotron"
+    >
+      <h1 class="display-4">Welcome to <span>Self_Study_in</span></h1>
+      <p class="lead">EMPOWER YOURSELF WITH SELF STUDY</p>
+      <hr class="my-4" />
+      <p style="font-size: 20px">
+        <span>Self_Study_in</span> offers concise knowledge on programming languages 📚 and
+        delivers quality content, making learning more effective 🚀.
+      </p>
+      <a class="btn btn-success btn-lg" href="#cards" role="button"
+        >Know more
+      </a>
+    </div>
+
+  <!-- Cards -->
+  <section id="course">
+  <div class="courses-scroll">
+  <div class="container" id="cards">
+      <div class="row row-cols-1 row-cols-md-3 g-4">        
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assest/html.jpg
+              "
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center"><b>HTML</b></h5>
+              <p class="card-text">
+                HTML is a markup language used for creating web pages and web
+                applications.
+              </p>
+              <button>
+                <a href="./courses/fulstack.html" target="_blank"
+                  >Start Learning</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./assest/c.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title"><b>C</b></h5>
+              <p class="card-text">C LANGUAGE:It is important due to its</p>
+              <ul>
+                <li>Efficiency</li>
+                <li>portability</li>
+                <li>competitive programming</li>
+              </ul>
+              <button>
+                <a href="./courses/c.html" target="_blank">Start Learning</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./assest/python.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Python</h5>
+              <p class="card-text">
+                It is one of the most easiest programming language and is used
+                for
+              </p>
+              <ul>
+                <li>competitive programming</li>
+                <li>creating software</li>
+              </ul>
+              <button>
+                <a href="./courses/python.html" target="_blank"
+                  >Start Learning</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  </section>
+    <!-- About + Contact (two-column layout) -->
+    <section class="container mt-4 mb-5">
+      <div class="row g-4 align-items-start">
+        <div class="col-12 col-md-6">
+          <div id="about" class="about-column">
+            <h2>About <span>Self_Study_in</span></h2>
+            <p>
+              Many students as beginners face the question of which programming
+              language to learn and where to start.
+            </p>
+            <p>
+              We solved this by creating <span>Self_Study_in</span> — offering
+              concise, free courses that make learning easier and more effective.
+            </p>
+            <p>
+              Our main motive is to help students overcome challenges and grow
+              together while gaining strong coding fundamentals.
+            </p>
+            <p>Let's learn and grow together.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="contact-card">
+            <h2 class="mb-3">Contact Us</h2>
+            <form>
+              <div class="mb-3">
+                <label for="fname" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="fname" placeholder="Enter your first name" />
+              </div>
+              <div class="mb-3">
+                <label for="lname" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lname" placeholder="Enter your last name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" />
+              </div>
+              <div class="mb-3">
+                <label for="comment" class="form-label">Your Message</label>
+                <textarea class="form-control" id="comment" rows="4" placeholder="Write your message here"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer">
+      <p><p class="copyright">&copy;Self_Study - All Right Reserved</p></p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+      integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+      crossorigin="anonymous"
+    ></script>
+    <!-- removed click-to-enlarge script per user request; image will now scale on hover only -->
+    <script>
+      // Initialize Bootstrap ScrollSpy with dynamic offset equal to navbar height
+      (function(){
+        var nav = document.querySelector('.navbar');
+        function initSpy(){
+          var navHeight = nav ? nav.offsetHeight + 8 : 80; // small cushion
+          var scrollSpy = bootstrap.ScrollSpy.getInstance(document.body);
+          if (scrollSpy) scrollSpy.dispose();
+          new bootstrap.ScrollSpy(document.body, { target: '#navbarSupportedContent', offset: navHeight });
+        }
+        if (window.bootstrap) {
+          initSpy();
+          // re-init on resize in case navbar height changes
+          window.addEventListener('resize', function(){ initSpy(); });
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+/* courses/style.css - updated to use shared color palette */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --dark-900: #0B0C10;
+  --dark-700: #1F2833;
+  --white: #FFFFFF;
+  --accent-cyan: #00A8E8;
+  --muted: #B0BEC5;
+  --accent-green: #00FF88;
+  --accent-blue: #00BFFF;
+}
+
+header {
+    background-color: var(--dark-700);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background: var(--dark-900);
+    padding: 20px;
+    color: var(--white);
+}
+
+.dropdown {
+    margin-bottom: 15px;
+}
+
+.dropbtn {
+    background-color: var(--dark-700);
+    color: var(--white);
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: var(--muted);
+    padding: 10px;
+    margin-top: 5px;
+    color: var(--dark-900);
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: var(--dark-900);
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(0,0,0,0.06);
+}
+
+.video-container {
+    flex: 1;
+    padding: 80px;
+    text-align: center;
+}
+
+
+.author-info {
+    
+    padding: 20px;
+    text-align: center;
+
+}
+
+footer {
+    background: var(--dark-700);
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
