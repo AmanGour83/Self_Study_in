@@ -163,36 +163,97 @@
     <section class="container mt-4 mb-5">
       <div class="row g-4 align-items-start">
         <div class="col-12 col-md-6">
-          <div id="about" class="about-column">
-            <h2>About <span>Self_Study_in</span></h2>
-            <p>
-              Many students as beginners face the question of which programming
-              language to learn and where to start.
-            </p>
-            <p>
-              We solved this by creating <span>Self_Study_in</span> — offering
-              concise, free courses that make learning easier and more effective.
-            </p>
-            <p>
-              Our main motive is to help students overcome challenges and grow
-              together while gaining strong coding fundamentals.
-            </p>
-            <p>Let's learn and grow together.</p>
+          <div class="about-card">
+            <div id="about" class="about-column">
+              <h2>About <span>Self_Study_in</span></h2>
+              <p>
+                Many students as beginners face the question of which programming
+                language to learn and where to start.
+              </p>
+              <p>
+                We solved this by creating <span>Self_Study_in</span> — offering
+                concise, free courses that make learning easier and more effective.
+              </p>
+              <p>
+                Our main motive is to help students overcome challenges and grow
+                together while gaining strong coding fundamentals.
+              </p>
+              <p>Let's learn and grow together.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="mission-card">
+              <h2 class="mb-3">Our Mission & Goal</h2>
+              <p><strong>Mission:</strong> To provide free, high-quality, and concise programming resources that help learners build strong fundamentals quickly and confidently.</p>
+              <p><strong>Goal:</strong> To create an inclusive learning community where students can access clear tutorials, practical examples, and curated learning paths to accelerate their growth.</p>
+              <ul>
+                <li>Offer bite-sized, focused lessons.</li>
+                <li>Keep resources free and accessible.</li>
+                <li>Encourage hands-on practice and projects.</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Shortcuts + Courses (left) and Contact form (right) -->
+    <section class="container mt-4 mb-5">
+      <div class="row g-4 align-items-start">
+        <div class="col-12 col-md-6">
+          <div class="row">
+            <div class="col-6">
+              <div class="shortcut-list">
+                <a class="navbar-brand"
+                  style="
+                    font-weight: 500;
+                    font-family: cursive;
+                    font-size: xx-large;
+                    color: rgb(251, 251, 253);
+                  ">
+                  <span>Self_Study_in</span>
+                  </a>
+                <ul>
+                  <li><a href="#jumbotron">Home</a></li>
+                  <li><a href="#course">Course</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#footer">Contact</a></li>
+                  <li class="social-links">
+                    <a href="mailto:example@example.com" title="Email" aria-label="Email"><i class="bx bx-envelope"></i></a>
+                    <a href="https://wa.me/1234567890" title="WhatsApp" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bx bxl-whatsapp"></i></a>
+                    <a href="https://www.youtube.com/channel/CHANNEL_ID" title="YouTube" target="_blank" rel="noopener" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="course-list">
+                <h4>Courses</h4>
+                <ul>
+                  <li><a href="./courses/fulstack.html" target="_blank">HTML / Fullstack</a></li>
+                  <li><a href="./courses/c.html" target="_blank">C Language</a></li>
+                  <li><a href="./courses/python.html" target="_blank">Python</a></li>
+                  <li><a href="./courses/1.html" target="_blank">Misc / Lecture List</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-12 col-md-6">
           <div class="contact-card">
             <h2 class="mb-3">Contact Us</h2>
             <form>
-              <div class="mb-3">
-                <label for="fname" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="fname" placeholder="Enter your first name" />
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="fname" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="fname" placeholder="Enter your first name" />
+                </div>
+                <div class="col-md-6">
+                  <label for="lname" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="lname" placeholder="Enter your last name" />
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="lname" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="lname" placeholder="Enter your last name" />
-              </div>
-              <div class="mb-3">
+              <div class="mb-3 mt-3">
                 <label for="email" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter your email" />
               </div>
@@ -209,7 +270,7 @@
 
     <!-- Footer -->
     <div id="footer">
-      <p><p class="copyright">&copy;Self_Study - All Right Reserved</p></p>
+      <p><p class="copyright">&copy;Self_Study_in - All Right Reserved</p></p>
     </div>
 
     <script
@@ -228,22 +289,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- removed click-to-enlarge script per user request; image will now scale on hover only -->
-    <script>
-      // Initialize Bootstrap ScrollSpy with dynamic offset equal to navbar height
-      (function(){
-        var nav = document.querySelector('.navbar');
-        function initSpy(){
-          var navHeight = nav ? nav.offsetHeight + 8 : 80; // small cushion
-          var scrollSpy = bootstrap.ScrollSpy.getInstance(document.body);
-          if (scrollSpy) scrollSpy.dispose();
-          new bootstrap.ScrollSpy(document.body, { target: '#navbarSupportedContent', offset: navHeight });
-        }
-        if (window.bootstrap) {
-          initSpy();
-          // re-init on resize in case navbar height changes
-          window.addEventListener('resize', function(){ initSpy(); });
-        }
-      })();
-    </script>
+    <script src="./script.js">    </script>
   </body>
 </html>

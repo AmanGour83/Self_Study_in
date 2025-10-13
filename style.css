@@ -1,3 +1,101 @@
+/*
+  style.css - Clean, commented stylesheet for Self_Study_in
+  Color palette (from user):
+  - --dark-900: #0B0C10
+  - --dark-700: #1F2833
+  - --white:     #FFFFFF
+  - --accent-cyan:#00A8E8
+  - --muted:     #B0BEC5
+  - --accent-green:#00FF88
+  - --accent-blue:#00BFFF
+*/
+:root{
+  --dark-900: #0B0C10;
+  --dark-700: #1F2833;
+  --white: #FFFFFF;
+  --accent-cyan: #00A8E8;
+  --muted: #B0BEC5;
+  --accent-green: #00FF88;
+  --accent-blue: #00BFFF;
+}
+
+/* Reset / base */
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--dark-700);
+  color:var(--white);
+  line-height:1.45;
+}
+
+/* Links */
+a{color:var(--accent-cyan);text-decoration:none}
+a:hover{color:var(--accent-blue);text-decoration:underline}
+
+/* NAVBAR */
+#mainNavbar{background:linear-gradient(180deg, rgba(11,12,16,0.85), rgba(31,40,51,0.85));padding:.45rem 1rem}
+.navbar-brand{font-family:cursive;font-weight:600;font-size:1.35rem;color:var(--accent-cyan)}
+.navbar-brand:hover{color:var(--accent-cyan);text-decoration:none;transform:scale(1.08)}
+.nav-link{color:var(--white);padding:.35rem .6rem;transition:color .14s, transform .14s}
+.nav-link:hover{color:var(--accent-green)!important;transform:scale(1.05);text-decoration:underline}
+.nav-link.active{color:var(--accent-green)!important;text-decoration:underline;font-weight:700}
+
+/* small profile image in navbar */
+.nav-profile{width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.06);transition:transform .18s,box-shadow .18s}
+.nav-profile:hover{transform:scale(1.2);box-shadow:0 10px 28px rgba(0,0,0,0.45)}
+
+/* HERO */
+.hero-section{padding:96px 0 40px;text-align:center;background:linear-gradient(180deg, rgba(0,0,0,0.20), transparent)}
+.hero-section .display-4{font-size:2.4rem;margin-bottom:.5rem}
+.btn-cta{background:linear-gradient(90deg,var(--accent-cyan),var(--accent-blue));color:var(--white);border:none;padding:.6rem 1rem;border-radius:8px}
+
+.section-pad{padding:42px 0}
+.section-title{font-size:1.6rem;margin-bottom:1rem}
+
+/* COURSES - scrollable area */
+.courses-scroll{max-height:520px;overflow-y:auto;padding:8px;border-radius:10px}
+.courses-scroll::-webkit-scrollbar{width:10px}
+.courses-scroll::-webkit-scrollbar-thumb{background:rgba(176,190,197,0.25);border-radius:8px}
+.course-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:none}
+.course-card img{height:180px;object-fit:cover;border-radius:8px 8px 0 0}
+.course-card .card-body{padding:12px}
+.btn-start{background:var(--accent-green);color:var(--dark-900);padding:.5rem .8rem;border-radius:6px;border:none}
+.btn-start:hover{background:var(--accent-blue);color:var(--white)}
+
+/* ABOUT / MISSION panels */
+.about-mission-container .panel{background:rgba(255,255,255,0.02);padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.about-mission-container h3{margin-top:0}
+.about-mission-container p{color:var(--muted)}
+
+/* RESOURCES (shortcuts / courses list) */
+.list-plain{list-style:none;padding:0;margin:0}
+.list-plain li{margin:.45rem 0}
+.list-plain a{color:var(--white)}
+
+.social-shortcuts{display:flex;gap:.6rem;margin-top:.8rem}
+.social-link{color:var(--white);font-size:1.2rem;display:inline-flex;align-items:center;justify-content:center}
+.social-link:hover{color:var(--accent-green)}
+
+/* PANELS used for contact and small cards */
+.panel.contact-panel{background:rgba(255,255,255,0.03);padding:18px;border-radius:10px}
+.panel.contact-panel .form-label{color:var(--muted)}
+.form-control{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--white)}
+.form-control:focus{outline:none;box-shadow:none;border-color:var(--accent-cyan)}
+
+/* Footer */
+#siteFooter{background:linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.02));margin-top:24px}
+
+/* Responsive tweaks */
+@media (max-width:768px){
+  .hero-section{padding:72px 12px}
+  .course-card img{height:160px}
+  .nav-profile{width:34px;height:34px}
+  .courses-scroll{max-height:420px}
+}
+
+/* Small utilities */
+.text-muted-soft{color:var(--muted)}
 a {
   text-decoration: none;
 }
@@ -164,7 +262,7 @@ a:not(.navbar-brand):hover {
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--accent-blue) !important;
+  color: var(--accent-green) !important;
   transform: scale(1.06);
   text-decoration: underline;
   font-size: 1.05em;
@@ -176,7 +274,7 @@ a:not(.navbar-brand):hover {
 
 /* Active nav state (when a section is in view) */
 .nav-link.active {
-  color: var(--accent-blue) !important;
+  color: var(--accent-green) !important;
   text-decoration: underline;
   font-size: 1.06em;
   font-weight: 700;
@@ -216,6 +314,46 @@ a:not(.navbar-brand):hover {
   border-radius: 10px;
   border: 1px solid rgba(255,255,255,0.04);
 }
+
+.mission-card {
+  background: rgba(255,255,255,0.02);
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.about-card {
+  background: rgba(255,255,255,0.02);
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.shortcut-list, .course-list {
+  /* No container styling so lists blend with surrounding layout */
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+}
+.shortcut-list ul, .course-list ul { list-style: none; padding: 0; margin: 0; }
+.shortcut-list li, .course-list li { margin: 8px 0; }
+.shortcut-list a, .course-list a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color .12s ease, transform .12s ease;
+}
+.shortcut-list a:hover, .course-list a:hover {
+  color: var(--accent-cyan);
+  transform: translateX(4px);
+  text-decoration: underline;
+}
+
+.shortcut-list .social-links { margin-top: 10px; display:flex; gap:8px; align-items:center; font-size: 120%; }
+/* social links: remove boxed background/border and make icons slightly larger (~10%) */
+.shortcut-list .social-links a { display:inline-flex; align-items:center; gap:6px; color:var(--white); padding:4px 6px; border-radius:0; background:transparent; border:none; }
+.shortcut-list .social-links a i { font-size:24px; }
+.shortcut-list .social-links a:hover { color:var(--accent-green); transform:none; }
 
 @media (max-width: 767px) {
   .about-column, .contact-card { padding: 12px; }
