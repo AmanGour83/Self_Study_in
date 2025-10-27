@@ -35,9 +35,9 @@ a:hover{color:var(--accent-blue);text-decoration:underline}
 
 /* NAVBAR */
 #mainNavbar{background:linear-gradient(180deg, rgba(11,12,16,0.85), rgba(31,40,51,0.85));padding:.45rem 1rem}
-.navbar-brand{font-family:cursive;font-weight:600;font-size:1.35rem;color:var(--accent-cyan)}
+.navbar-brand{font-family:cursive;font-weight:600;font-size:1.35rem;color:var(--white)}
 .navbar-brand:hover{color:var(--accent-cyan);text-decoration:none;transform:scale(1.08)}
-.nav-link{color:var(--white);padding:.35rem .6rem;transition:color .14s, transform .14s}
+.nav-link{color:var(--accent-cyan);padding:.35rem .6rem;transition:color .14s, transform .14s}
 .nav-link:hover{color:var(--accent-green)!important;transform:scale(1.05);text-decoration:underline}
 .nav-link.active{color:var(--accent-green)!important;text-decoration:underline;font-weight:700}
 
@@ -128,10 +128,28 @@ body {
   line-height: 1.45;
 }
 
-a {
+.card-link {
   text-decoration: none;
-  color: var(--accent-cyan);
 }
+
+.card {
+  transform: scale(0.7);
+}
+
+.card-link:hover {
+  text-decoration: none;
+}
+
+.card-title {
+  font-weight: 900;
+  text-align: center;
+  font-size: 24px;
+  color: rgb(109, 66, 121);
+  text-decoration: none;
+}
+
+
+
 a:not(.navbar-brand):hover {
   color: var(--accent-blue);
   text-decoration: underline;
@@ -358,4 +376,3 @@ a:not(.navbar-brand):hover {
 @media (max-width: 767px) {
   .about-column, .contact-card { padding: 12px; }
 }
-
